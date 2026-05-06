@@ -1,20 +1,20 @@
-import { Component, signal } from '@angular/core';
+import { Component, signal, afterNextRender } from '@angular/core'; // 1. Ajoutez afterNextRender
 import { RouterOutlet } from '@angular/router';
-import { OnInit } from '@angular/core';
 import { initFlowbite } from 'flowbite';
 
 @Component({
   selector: 'app-root',
+  standalone: true, // Assurez-vous qu'il est bien en standalone si besoin
   imports: [RouterOutlet],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
-export class App implements OnInit {
+export class App { 
   protected readonly title = signal('gsc');
 
-  ngOnInit(): void {
-    initFlowbite();
+  constructor() {
+    afterNextRender(() => {
+      initFlowbite();
+    });
   }
 }
-
-

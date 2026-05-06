@@ -1,64 +1,161 @@
-<header class="sticky top-0 z-50 bg-white/90 backdrop-blur-lg border-b border-ink-100 shadow-sm fixed">
-    <input type="checkbox" id="nav-toggle" class="hidden peer" />
-    <nav class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+<header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-ink-100 shadow-sm">
+  <!-- Checkbox pour le menu (cachée) -->
+  <input type="checkbox" id="nav-toggle" #navToggle class="hidden peer" />
 
-      <!-- Logo -->
-      <a [routerLink]="['/home']" class="flex items-center gap-3 group">
-        <div class="relative">
-          <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-ink-900 to-ink-700 flex items-center justify-center shadow-lg shadow-ink-900/20 group-hover:shadow-ink-900/40 transition">
-            <span class="font-display font-bold text-gold-400 text-lg leading-none">G</span>
-          </div>
-          <span class="absolute -bottom-1 -right-1 w-4 h-4 rounded-md bg-gold-500 flex items-center justify-center shadow">
-            <span class="font-display font-bold text-ink-950 text-[9px] leading-none">SC</span>
-          </span>
+  <nav class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+    <!-- Logo -->
+    <a [routerLink]="['/home']" fragment="hero" class="flex items-center gap-4 group">
+      <!-- Conteneur du Logo Image -->
+      <div class="relative">
+        <div
+          class="w-14 h-14 rounded-2xl bg-white flex items-center justify-center shadow-md border border-ink-50 group-hover:shadow-xl group-hover:scale-105 transition-all duration-300 overflow-hidden">
+          <!-- Remplacer 'assets/logo-gsc.png' par le chemin réel de votre image -->
+          <img src="/logo.png" alt="GSC Sarl Logo" class="w-full h-full object-contain p-1" />
         </div>
-        <div class="leading-tight hidden sm:block">
-          <p class="font-display font-bold text-ink-900 text-lg tracking-tight">GSC <span class="text-gold-500">Sarl</span></p>
-          <p class="text-[10px] uppercase tracking-[0.18em] text-ink-500 font-semibold">Générale de Service Continental</p>
-        </div>
-      </a>
 
-      <!-- Desktop nav -->
-      <ul class="hidden lg:flex items-center gap-1">
-        <li><a [routerLink]="['/home']" routerLinkActive="active" [routerLinkActiveOptions]="{ fragment: 'exact' }" class="px-4 py-2 text-sm font-semibold text-ink-900 hover:text-gold-600 relative group transition">home      <span class="absolute left-4 right-4 -bottom-0.5 h-0.5 bg-gold-500 scale-x-0 group-hover:scale-x-100 origin-left transition-transform"></span></a></li>
-        <li><a [routerLink]="['/home']" fragment="about" routerLinkActive="active" [routerLinkActiveOptions]="{ fragment: 'exact' }" class="px-4 py-2 text-sm font-semibold text-ink-900 hover:text-gold-600 relative group transition">À Propos     <span class="absolute left-4 right-4 -bottom-0.5 h-0.5 bg-gold-500 scale-x-0 group-hover:scale-x-100 origin-left transition-transform"></span></a></li>
-        <li><a [routerLink]="['/home']" fragment="services" routerLinkActive="active" [routerLinkActiveOptions]="{ fragment: 'exact' }" class="px-4 py-2 text-sm font-semibold text-ink-900 hover:text-gold-600 relative group transition">Services     <span class="absolute left-4 right-4 -bottom-0.5 h-0.5 bg-gold-500 scale-x-0 group-hover:scale-x-100 origin-left transition-transform"></span></a></li>
-        <li><a [routerLink]="['/home']" fragment="realisations" routerLinkActive="active" [routerLinkActiveOptions]="{ fragment: 'exact' }" class="px-4 py-2 text-sm font-semibold text-ink-900 hover:text-gold-600 relative group transition">Réalisations <span class="absolute left-4 right-4 -bottom-0.5 h-0.5 bg-gold-500 scale-x-0 group-hover:scale-x-100 origin-left transition-transform"></span></a></li>
-        <li><a [routerLink]="['/home']" fragment="vision" routerLinkActive="active" [routerLinkActiveOptions]="{ fragment: 'exact' }" class="px-4 py-2 text-sm font-semibold text-ink-900 hover:text-gold-600 relative group transition">Vision       <span class="absolute left-4 right-4 -bottom-0.5 h-0.5 bg-gold-500 scale-x-0 group-hover:scale-x-100 origin-left transition-transform"></span></a></li>
-        <li><a [routerLink]="['/home']" fragment="contact" routerLinkActive="active" [routerLinkActiveOptions]="{ fragment: 'exact' }" class="px-4 py-2 text-sm font-semibold text-ink-900 hover:text-gold-600 relative group transition">Contact      <span class="absolute left-4 right-4 -bottom-0.5 h-0.5 bg-gold-500 scale-x-0 group-hover:scale-x-100 origin-left transition-transform"></span></a></li>
-      </ul>
-
-      <!-- CTA -->
-      <div class="hidden lg:flex items-center gap-3">
-        <a href="tel:+243998145840" class="text-sm font-semibold text-ink-900 hover:text-gold-600 transition flex items-center gap-2">
-          <svg class="w-4 h-4 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h2.28a2 2 0 011.94 1.515l.7 2.828a2 2 0 01-.45 1.95L8.09 10.91a11 11 0 005 5l1.617-1.38a2 2 0 011.95-.45l2.828.7A2 2 0 0121 16.72V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
-          +243 998 145 840
-        </a>
-        <a href="#contact" class="group relative inline-flex items-center gap-2 bg-ink-900 hover:bg-ink-800 text-white text-sm font-semibold px-5 py-3 rounded-xl shadow-lg shadow-ink-900/20 hover:shadow-ink-900/40 transition overflow-hidden">
-          <span class="relative z-10">Devis gratuit</span>
-          <svg class="relative z-10 w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.2"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
-          <span class="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 bg-gradient-to-r from-transparent via-gold-500/30 to-transparent"></span>
-        </a>
+        <!-- Petit indicateur de statut ou rappel de couleur (optionnel, apporte une touche moderne) -->
+        <span
+          class="absolute -bottom-1 -right-1 w-5 h-5 rounded-lg bg-gold-500 border-2 border-white flex items-center justify-center shadow-sm">
+          <div class="w-1.5 h-1.5 rounded-full bg-ink-900 animate-pulse"></div>
+        </span>
       </div>
 
-      <!-- Mobile burger (CSS-only) -->
-      <label for="nav-toggle" class="lg:hidden cursor-pointer w-10 h-10 flex flex-col items-center justify-center gap-1.5 group">
-        <span class="bar-1 block w-6 h-0.5 bg-ink-900 rounded transition-all duration-300"></span>
-        <span class="bar-2 block w-6 h-0.5 bg-ink-900 rounded transition-all duration-300"></span>
-        <span class="bar-3 block w-6 h-0.5 bg-ink-900 rounded transition-all duration-300"></span>
-      </label>
-    </nav>
+      <!-- Texte de l'entreprise -->
+      <div class="leading-tight hidden sm:block">
+        <div class="flex items-center gap-2">
+          <p class="font-display font-bold text-ink-900 text-xl tracking-tighter">GSC <span
+              class="text-gold-500">Sarl</span></p>
+          <span
+            class="px-1.5 py-0.5 rounded text-[8px] bg-ink-100 text-ink-500 font-bold uppercase tracking-wider">RDC</span>
+        </div>
+        <p class="text-[10px] uppercase tracking-[0.15em] text-ink-400 font-bold mt-0.5">
+          La Générale de Service Continental
+        </p>
+      </div>
+    </a>
 
-    <!-- Mobile menu -->
-    <div id="mobile-menu" class="lg:hidden max-h-0 opacity-0 pointer-events-none overflow-hidden transition-all duration-500 ease-out bg-white border-t border-ink-100">
-      <ul class="px-6 py-6 flex flex-col gap-1">
-        <li><a [routerLink]="['/home']" routerLinkActive="active" [routerLinkActiveOptions]="{ fragment: 'exact' }" class="block py-3 px-4 rounded-lg text-ink-900 font-semibold hover:bg-gold-50 hover:text-gold-700 transition">home</a></li>
-        <li><a [routerLink]="['/home']" fragment="about" routerLinkActive="active" [routerLinkActiveOptions]="{ fragment: 'exact' }" class="block py-3 px-4 rounded-lg text-ink-900 font-semibold hover:bg-gold-50 hover:text-gold-700 transition">À Propos</a></li>
-        <li><a [routerLink]="['/home']" fragment="services" routerLinkActive="active" [routerLinkActiveOptions]="{ fragment: 'exact' }" class="block py-3 px-4 rounded-lg text-ink-900 font-semibold hover:bg-gold-50 hover:text-gold-700 transition">Services</a></li>
-        <li><a [routerLink]="['/home']" fragment="realisations" routerLinkActive="active" [routerLinkActiveOptions]="{ fragment: 'exact' }" class="block py-3 px-4 rounded-lg text-ink-900 font-semibold hover:bg-gold-50 hover:text-gold-700 transition">Réalisations</a></li>
-        <li><a [routerLink]="['/home']" fragment="vision" routerLinkActive="active" [routerLinkActiveOptions]="{ fragment: 'exact' }" class="block py-3 px-4 rounded-lg text-ink-900 font-semibold hover:bg-gold-50 hover:text-gold-700 transition">Vision &amp; Mission</a></li>
-        <li><a [routerLink]="['/home']" fragment="contact" routerLinkActive="active" [routerLinkActiveOptions]="{ fragment: 'exact' }" class="block py-3 px-4 rounded-lg text-ink-900 font-semibold hover:bg-gold-50 hover:text-gold-700 transition">Contact</a></li>
-        <li class="pt-3"><a [routerLink]="['/home']" fragment="contact" class="block text-center bg-ink-900 text-white font-semibold py-3 px-4 rounded-xl hover:bg-ink-800 transition">Demander un devis →</a></li>
+
+    <!-- Desktop Nav -->
+    <ul class="hidden lg:flex items-center gap-1">
+      <ul class="hidden lg:flex items-center gap-1">
+        <li><a [routerLink]="['/home']" fragment="hero" routerLinkActive="active"
+            [routerLinkActiveOptions]="{ fragment: 'exact' }"
+            class="px-4 py-2 text-sm font-semibold text-ink-900 hover:text-gold-600 relative group transition">ACCUEIL
+            <span
+              class="absolute left-4 right-4 -bottom-0.5 h-0.5 bg-gold-500 scale-x-0 group-hover:scale-x-100 origin-left transition-transform"></span></a>
+        </li>
+        <li><a [routerLink]="['/home']" fragment="about" routerLinkActive="active"
+            [routerLinkActiveOptions]="{ fragment: 'exact' }"
+            class="px-4 py-2 text-sm font-semibold text-ink-900 hover:text-gold-600 relative group transition">À PROPOS
+            <span
+              class="absolute left-4 right-4 -bottom-0.5 h-0.5 bg-gold-500 scale-x-0 group-hover:scale-x-100 origin-left transition-transform"></span></a>
+        </li>
+        <li><a [routerLink]="['/home']" fragment="services" routerLinkActive="active"
+            [routerLinkActiveOptions]="{ fragment: 'exact' }"
+            class="px-4 py-2 text-sm font-semibold text-ink-900 hover:text-gold-600 relative group transition">SERVICES
+            <span
+              class="absolute left-4 right-4 -bottom-0.5 h-0.5 bg-gold-500 scale-x-0 group-hover:scale-x-100 origin-left transition-transform"></span></a>
+        </li>
+        <li><a [routerLink]="['/home']" fragment="realisations" routerLinkActive="active"
+            [routerLinkActiveOptions]="{ fragment: 'exact' }"
+            class="px-4 py-2 text-sm font-semibold text-ink-900 hover:text-gold-600 relative group transition">REALISATIONS
+            <span
+              class="absolute left-4 right-4 -bottom-0.5 h-0.5 bg-gold-500 scale-x-0 group-hover:scale-x-100 origin-left transition-transform"></span></a>
+        </li>
+        <li><a [routerLink]="['/home']" fragment="vision" routerLinkActive="active"
+            [routerLinkActiveOptions]="{ fragment: 'exact' }"
+            class="px-4 py-2 text-sm font-semibold text-ink-900 hover:text-gold-600 relative group transition">VISION
+            <span
+              class="absolute left-4 right-4 -bottom-0.5 h-0.5 bg-gold-500 scale-x-0 group-hover:scale-x-100 origin-left transition-transform"></span></a>
+        </li>
+        <li><a [routerLink]="['/home']" fragment="contact" routerLinkActive="active"
+            [routerLinkActiveOptions]="{ fragment: 'exact' }"
+            class="px-4 py-2 text-sm font-semibold text-ink-900 hover:text-gold-600 relative group transition">CONTACT
+            <span
+              class="absolute left-4 right-4 -bottom-0.5 h-0.5 bg-gold-500 scale-x-0 group-hover:scale-x-100 origin-left transition-transform"></span></a>
+        </li>
       </ul>
+    </ul>
+
+    <!-- CTA -->
+    <div class="hidden lg:flex items-center gap-3">
+      <a href="tel:+243998145840"
+        class="text-sm font-semibold text-ink-900 hover:text-gold-600 transition flex items-center gap-2">
+        <svg class="w-4 h-4 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M3 5a2 2 0 012-2h2.28a2 2 0 011.94 1.515l.7 2.828a2 2 0 01-.45 1.95L8.09 10.91a11 11 0 005 5l1.617-1.38a2 2 0 011.95-.45l2.828.7A2 2 0 0121 16.72V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+        </svg>
+        +243 998 145 840
+      </a>
+      <a href="#contact"
+        class="group relative inline-flex items-center gap-2 bg-ink-900 hover:bg-ink-800 text-white text-sm font-semibold px-5 py-3 rounded-xl shadow-lg shadow-ink-900/20 hover:shadow-ink-900/40 transition overflow-hidden">
+        <span class="relative z-10">Devis gratuit</span>
+        <svg class="relative z-10 w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none"
+          stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+        </svg>
+        <span
+          class="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 bg-gradient-to-r from-transparent via-gold-500/30 to-transparent"></span>
+      </a>
     </div>
-  </header>
+
+    <!-- Mobile Burger Button -->
+    <label for="nav-toggle"
+      class="lg:hidden relative z-50 cursor-pointer w-12 h-12 flex flex-col items-center justify-center rounded-xl bg-ink-50 hover:bg-ink-100 transition-all active:scale-95 group">
+      <div class="relative w-6 h-5 flex flex-col justify-between">
+        <span
+          class="block w-6 h-0.5 bg-ink-900 rounded-full transition-all duration-300 origin-left peer-checked:group-[]:rotate-45 peer-checked:group-[]:translate-x-[4px] peer-checked:group-[]:-translate-y-[1px]"></span>
+        <span
+          class="block w-6 h-0.5 bg-ink-900 rounded-full transition-all duration-200 peer-checked:group-[]:opacity-0 peer-checked:group-[]:-translate-x-2"></span>
+        <span
+          class="block w-6 h-0.5 bg-ink-900 rounded-full transition-all duration-300 origin-left peer-checked:group-[]:-rotate-45 peer-checked:group-[]:translate-x-[4px] peer-checked:group-[]:translate-y-[1px]"></span>
+      </div>
+
+      <!-- CSS Inline pour l'animation du burger (car Tailwind peer ne gère pas les enfants complexes facilement) -->
+      <style>
+        #nav-toggle:checked~nav label .relative span:nth-child(1) {
+          transform: rotate(45deg) translate(4px, -1px);
+          width: 28px;
+        }
+
+        #nav-toggle:checked~nav label .relative span:nth-child(2) {
+          opacity: 0;
+          transform: translateX(-10px);
+        }
+
+        #nav-toggle:checked~nav label .relative span:nth-child(3) {
+          transform: rotate(-45deg) translate(4px, 1px);
+          width: 28px;
+        }
+      </style>
+    </label>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div
+    class="lg:hidden absolute top-20 left-0 w-full overflow-hidden max-h-0 peer-checked:max-h-[100vh] peer-checked:opacity-100 opacity-0 transition-all duration-500 ease-in-out bg-white/98 backdrop-blur-xl border-b border-ink-100 shadow-2xl">
+    <ul class="px-6 py-8 flex flex-col gap-2">
+      <!-- On ajoute (click)="navToggle.checked = false" sur chaque lien pour fermer le menu -->
+      <li><a (click)="navToggle.checked = false" [routerLink]="['/home']" fragment="hero"
+          class="flex items-center justify-between py-4 px-5 rounded-2xl text-ink-900 font-bold hover:bg-gold-50 hover:text-gold-700 transition-all active:scale-[0.98]">ACCUEIL
+          <span class="text-gold-500">→</span></a></li>
+      <li><a (click)="navToggle.checked = false" [routerLink]="['/home']" fragment="about"
+          class="flex items-center justify-between py-4 px-5 rounded-2xl text-ink-900 font-bold hover:bg-gold-50 hover:text-gold-700 transition-all active:scale-[0.98]">À
+          PROPOS <span class="text-gold-500">→</span></a></li>
+      <li><a (click)="navToggle.checked = false" [routerLink]="['/home']" fragment="services"
+          class="flex items-center justify-between py-4 px-5 rounded-2xl text-ink-900 font-bold hover:bg-gold-50 hover:text-gold-700 transition-all active:scale-[0.98]">Services
+          <span class="text-gold-500">→</span></a></li>
+      <li><a (click)="navToggle.checked = false" [routerLink]="['/home']" fragment="realisations"
+          class="flex items-center justify-between py-4 px-5 rounded-2xl text-ink-900 font-bold hover:bg-gold-50 hover:text-gold-700 transition-all active:scale-[0.98]">REALISATIONS 
+          <span class="text-gold-500">→</span></a></li>
+      <li><a (click)="navToggle.checked = false" [routerLink]="['/home']" fragment="contact"
+          class="mt-4 block text-center bg-ink-900 text-white font-bold py-5 px-6 rounded-2xl shadow-xl shadow-ink-900/20 active:scale-95 transition-transform">Demander
+          un devis</a></li>
+    </ul>
+
+    <!-- Petit footer de menu pour faire pro -->
+    <div class="px-11 pb-10 text-center">
+      <p class="text-[10px] text-ink-400 uppercase tracking-widest font-bold">GSC Sarl — Excellence & Service</p>
+    </div>
+  </div>
+</header>
