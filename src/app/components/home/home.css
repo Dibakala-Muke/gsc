@@ -1,0 +1,4 @@
+/* src/app/components/home/home.component.css */
+:host {
+  display: block;
+}

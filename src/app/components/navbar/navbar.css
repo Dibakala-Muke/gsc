@@ -1,0 +1,31 @@
+/* src/app/components/navbar/navbar.component.css */
+:host {
+  display: block;
+}
+
+/* Style pour les liens actifs */
+a.active {
+  color: #d97706; /* or-gold-600 */
+  font-weight: 600;
+}
+
+/* Afficher la barre de soulignement en permanence pour les liens actifs */
+a.active span {
+  transform: scaleX(1);
+  background-color: #d97706;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  background: rgba(255,255,255,0.95);
+}
+main {
+  padding-top: 5rem; /* ou la hauteur de ton header */
+}
+section {
+  scroll-margin-top: 5rem; /* évite que le titre soit caché sous le header */
+}

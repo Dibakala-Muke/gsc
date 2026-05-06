@@ -1,3 +1,172 @@
-/* You can add global styles to this file, and also import other style files */
-
 @import "tailwindcss";
+html {
+  scroll-behavior: smooth;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import "flowbite/src/themes/default";
+
+@plugin "flowbite/plugin";
+@source "../node_modules/flowbite";
+
+@theme {
+  /* Couleurs Ink */
+  --color-ink-50: #f5f7fa;
+  --color-ink-100: #e4e9f0;
+  --color-ink-500: #5a6b80;
+  --color-ink-700: #1f2d40;
+  --color-ink-800: #142033;
+  --color-ink-900: #0a1628;
+  --color-ink-950: #050d1a;
+
+  /* Couleurs Gold */
+  --color-gold-50: #fdf8ec;
+  --color-gold-100: #faedc7;
+  --color-gold-200: #f4d987;
+  --color-gold-300: #ecc14a;
+  --color-gold-400: #e2ab26;
+  --color-gold-500: #d4a017;
+  --color-gold-600: #b07c10;
+  --color-gold-700: #8b5e11;
+  --color-gold-800: #724b15;
+  --color-gold-900: #613f17;
+
+  /* Fonts */
+  --font-sans: "Plus Jakarta Sans", system-ui, sans-serif;
+  --font-display: "Playfair Display", serif;
+
+  /* Animations (tokens uniquement) */
+  --animation-fade-up: fade-up 0.9s ease-out both;
+  --animation-fade-in: fade-in 1s ease-out both;
+  --animation-fade-in-slow: fade-in 1.6s ease-out both;
+  --animation-slide-right: slide-right 1s ease-out both;
+  --animation-zoom-slow: zoom-slow 18s ease-in-out infinite alternate;
+  --animation-marquee: marquee 40s linear infinite;
+  --animation-bounce-soft: bounce-soft 2.5s ease-in-out infinite;
+  --animation-shine: shine 3s linear infinite;
+}
+
+@keyframes fade-up {
+  0% { opacity: 0; transform: translateY(28px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fade-in {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes slide-right {
+  0% { opacity: 0; transform: translateX(-30px); }
+  100% { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes zoom-slow {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.12); }
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes bounce-soft {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+@keyframes shine {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+@layer utilities {
+  .animate-fade-up {
+    animation: var(--animation-fade-up);
+  }
+
+  .animate-fade-in {
+    animation: var(--animation-fade-in);
+  }
+
+  .animate-fade-in-slow {
+    animation: var(--animation-fade-in-slow);
+  }
+
+  .animate-slide-right {
+    animation: var(--animation-slide-right);
+  }
+
+  .animate-zoom-slow {
+    animation: var(--animation-zoom-slow);
+  }
+
+  .animate-marquee {
+    animation: var(--animation-marquee);
+  }
+
+  .animate-bounce-soft {
+    animation: var(--animation-bounce-soft);
+  }
+
+  .animate-shine {
+    animation: var(--animation-shine);
+  }
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+  }
+
+  body {
+    background-color: var(--color-ink-50);
+    color: var(--color-ink-900);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@layer utilities {
+  .text-gradient-gold {
+    background: linear-gradient(90deg, #e2ab26 0%, #f4d987 50%, #d4a017 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .bg-grid {
+    background-image: 
+      linear-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px), 
+      linear-gradient(90deg, rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+    background-size: 48px 48px;
+  }
+
+  .shine-text {
+    background: linear-gradient(90deg, #fff 0%, #f4d987 25%, #fff 50%, #f4d987 75%, #fff 100%);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: var(--animation-shine);
+  }
+}
+
+#nav-toggle:checked ~ #mobile-menu {
+  max-height: 80vh;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+#nav-toggle:checked ~ label .bar-1 {
+  transform: translateY(7px) rotate(45deg);
+}
+
+#nav-toggle:checked ~ label .bar-2 {
+  opacity: 0;
+}
+
+#nav-toggle:checked ~ label .bar-3 {
+  transform: translateY(-7px) rotate(-45deg);
+}
