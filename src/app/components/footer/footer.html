@@ -27,21 +27,30 @@
         <div class="lg:col-span-2">
           <p class="text-white font-bold text-sm mb-5">Navigation</p>
           <ul class="space-y-3 text-sm">
-            <li><a href="#accueil"      class="text-ink-100/60 hover:text-gold-400 transition">Accueil</a></li>
-            <li><a href="#about"        class="text-ink-100/60 hover:text-gold-400 transition">À Propos</a></li>
-            <li><a href="#services"     class="text-ink-100/60 hover:text-gold-400 transition">Services</a></li>
-            <li><a href="#realisations" class="text-ink-100/60 hover:text-gold-400 transition">Réalisations</a></li>
-            <li><a href="#vision"       class="text-ink-100/60 hover:text-gold-400 transition">Vision &amp; Mission</a></li>
+            <li><a [routerLink]="['/home']" fragment="about" routerLinkActive="active"
+            [routerLinkActiveOptions]="{ fragment: 'exact' }"      class="text-ink-100/60 hover:text-gold-400 transition">Accueil</a></li>
+            <li><a [routerLink]="['/home']" fragment="about" routerLinkActive="active"
+            [routerLinkActiveOptions]="{ fragment: 'exact' }"      class="text-ink-100/60 hover:text-gold-400 transition">À Propos</a></li>
+            <li><a [routerLink]="['/home']" fragment="services" routerLinkActive="active"
+            [routerLinkActiveOptions]="{ fragment: 'exact' }"      class="text-ink-100/60 hover:text-gold-400 transition">Services</a></li>
+            <li><a [routerLink]="['/home']" fragment="realisations" routerLinkActive="active"
+            [routerLinkActiveOptions]="{ fragment: 'exact' }"      class="text-ink-100/60 hover:text-gold-400 transition">Réalisations</a></li>
+            <li><a [routerLink]="['/home']" fragment="vision" routerLinkActive="active"
+            [routerLinkActiveOptions]="{ fragment: 'exact' }"      class="text-ink-100/60 hover:text-gold-400 transition">Vision &amp; Mission</a></li>
           </ul>
         </div>
 
         <div class="lg:col-span-2">
           <p class="text-white font-bold text-sm mb-5">Services</p>
           <ul class="space-y-3 text-sm">
-            <li><a href="#services" class="text-ink-100/60 hover:text-gold-400 transition">Génie civil</a></li>
-            <li><a href="#services" class="text-ink-100/60 hover:text-gold-400 transition">Mine</a></li>
-            <li><a href="#services" class="text-ink-100/60 hover:text-gold-400 transition">Supply chain</a></li>
-            <li><a href="#services" class="text-ink-100/60 hover:text-gold-400 transition">Transport</a></li>
+            <li><a [routerLink]="['/home']" fragment="services" routerLinkActive="active"
+            [routerLinkActiveOptions]="{ fragment: 'exact' }"      class="text-ink-100/60 hover:text-gold-400 transition">Génie civil</a></li>
+            <li><a [routerLink]="['/home']" fragment="services" routerLinkActive="active"
+            [routerLinkActiveOptions]="{ fragment: 'exact' }"      class="text-ink-100/60 hover:text-gold-400 transition">Mine</a></li>
+            <li><a [routerLink]="['/home']" fragment="services" routerLinkActive="active"
+            [routerLinkActiveOptions]="{ fragment: 'exact' }"      class="text-ink-100/60 hover:text-gold-400 transition">Supply chain</a></li>
+            <li><a [routerLink]="['/home']" fragment="services" routerLinkActive="active"
+            [routerLinkActiveOptions]="{ fragment: 'exact' }"      class="text-ink-100/60 hover:text-gold-400 transition">Transport</a></li>
             <li><a href="#services" class="text-ink-100/60 hover:text-gold-400 transition">Protection incendie</a></li>
           </ul>
         </div>
