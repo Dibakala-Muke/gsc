@@ -10,25 +10,25 @@ html {
 
 @theme {
   /* Couleurs Ink */
-  --color-ink-50: #f5f7fa;
-  --color-ink-100: #e4e9f0;
-  --color-ink-500: #5a6b80;
-  --color-ink-700: #1f2d40;
-  --color-ink-800: #142033;
-  --color-ink-900: #0a1628;
-  --color-ink-950: #050d1a;
+  --color-ink-50: #e6f0ff;
+  --color-ink-100: #cce0ff;
+  --color-ink-500: #4d7fd1;
+  --color-ink-700: #0b4aaf;
+  --color-ink-800: #093a8a;
+  --color-ink-900: #072c6b;
+  --color-ink-950: #04184d;
 
   /* Couleurs Gold */
-  --color-gold-50: #fdf8ec;
-  --color-gold-100: #faedc7;
-  --color-gold-200: #f4d987;
-  --color-gold-300: #ecc14a;
-  --color-gold-400: #e2ab26;
-  --color-gold-500: #d4a017;
-  --color-gold-600: #b07c10;
-  --color-gold-700: #8b5e11;
-  --color-gold-800: #724b15;
-  --color-gold-900: #613f17;
+  --color-gold-50: #f8f9fa;
+  --color-gold-100: #f1f3f4;
+  --color-gold-200: #e8eaed;
+  --color-gold-300: #dadce0;
+  --color-gold-400: #bdc1c6;
+  --color-gold-500: #9aa0a6;
+  --color-gold-600: #868789;
+  --color-gold-700: #6e747a;
+  --color-gold-800: #5f6368;
+  --color-gold-900: #3c4043;
 
   /* Fonts */
   --font-sans: "Plus Jakarta Sans", system-ui, sans-serif;
