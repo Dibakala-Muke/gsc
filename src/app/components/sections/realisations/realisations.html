@@ -1,4 +1,4 @@
-<section id="realisations" class="py-24 lg:py-32 bg-white">
+<section id="realisations" class="py-24 lg:py-32 bg-slate-50">
   <div appScroll>
     <div class="max-w-7xl mx-auto px-6">
       <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8 mb-14">
@@ -22,93 +22,103 @@
         </a>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <!-- 1 - Génie civil -->
-        <article
-          class="opacity-0 translate-y-8 group relative aspect-[4/5] rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500">
-          <img src="/images/road-construction.png" alt="Réhabilitation de routes"
-            class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" />
-          <div class="absolute inset-0 bg-gradient-to-t from-ink-950 via-ink-950/40 to-transparent"></div>
-          <div class="absolute top-5 left-5">
-            <span
-              class="inline-flex items-center px-3 py-1.5 rounded-full bg-gold-500 text-ink-950 text-[10px] font-bold uppercase tracking-wider">Génie
-              civil</span>
+      <div id="realisations-carousel" class="relative w-full" data-carousel="static">
+        <div class="relative h-96 overflow-hidden rounded-[2rem] md:h-[28rem]">
+          <!-- Item 1 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+            <div class="absolute inset-0 bg-white flex flex-col md:flex-row overflow-hidden">
+              <div class="md:w-1/2 h-64 md:h-full overflow-hidden">
+                <img src="/images/road-construction.png" alt="Réhabilitation de routes" class="w-full h-full object-cover" />
+              </div>
+              <div class="md:w-1/2 p-8 md:p-12 flex flex-col justify-center">
+                <p class="text-xs uppercase tracking-[0.3em] text-blue-600 font-semibold mb-3">Génie civil</p>
+                <h3 class="font-display text-2xl md:text-3xl font-bold text-slate-950 leading-tight">Réhabilitation de 54 km de routes &amp; dalots — Fizi / Mwenga</h3>
+                <p class="mt-4 text-sm leading-relaxed text-slate-600">Projet d'amélioration de l'accès physique au Sud-Kivu pour faciliter l'assistance humanitaire.</p>
+                <p class="mt-6 text-xs uppercase tracking-[0.25em] text-slate-400">PAM — 2020</p>
+              </div>
+            </div>
           </div>
-          <div class="absolute bottom-0 left-0 right-0 p-7 text-white">
-            <p class="text-xs text-gold-300 font-semibold uppercase tracking-wider mb-2">PAM — 2020</p>
-            <h3 class="font-display text-2xl font-bold leading-tight">Réhabilitation de 54 km de routes &amp; dalots —
-              Fizi / Mwenga</h3>
-            <p class="mt-3 text-sm text-ink-100/80 line-clamp-3"> Projet d'amélioration de l'accès physique au Sud-Kivu
-              pour faciliter l'assistance humanitaire. </p>
-          </div>
-        </article>
 
-        <!-- 2 - Mine -->
-        <article
-          class="opacity-0 translate-y-8 group relative aspect-[4/5] rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500">
-          <img src="/images/mining.png" alt="Mine d'or de Kiziba"
-            class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" />
-          <div class="absolute inset-0 bg-gradient-to-t from-ink-950 via-ink-950/40 to-transparent"></div>
-          <div class="absolute top-5 left-5">
-            <span
-              class="inline-flex items-center px-3 py-1.5 rounded-full bg-gold-500 text-ink-950 text-[10px] font-bold uppercase tracking-wider">Mine</span>
+          <!-- Item 2 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <div class="absolute inset-0 bg-white flex flex-col md:flex-row overflow-hidden">
+              <div class="md:w-1/2 h-64 md:h-full overflow-hidden">
+                <img src="/images/mining.png" alt="Mine d'or de Kiziba" class="w-full h-full object-cover" />
+              </div>
+              <div class="md:w-1/2 p-8 md:p-12 flex flex-col justify-center">
+                <p class="text-xs uppercase tracking-[0.3em] text-blue-600 font-semibold mb-3">Mine</p>
+                <h3 class="font-display text-2xl md:text-3xl font-bold text-slate-950 leading-tight">Mine d'or de Kiziba (MOK)</h3>
+                <p class="mt-6 text-xs uppercase tracking-[0.25em] text-slate-400">En cours — Sud-Kivu</p>
+              </div>
+            </div>
           </div>
-          <div class="absolute bottom-0 left-0 right-0 p-7 text-white">
-            <p class="text-xs text-gold-300 font-semibold uppercase tracking-wider mb-2">En cours — Sud-Kivu</p>
-            <h3 class="font-display text-2xl font-bold leading-tight">Mine d'or de Kiziba (MOK)</h3>
-          </div>
-        </article>
 
-        <!-- 3 - Aviation -->
-        <article
-          class="opacity-0 translate-y-8 group relative aspect-[4/5] rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500">
-          <img src="/images/hero-construction.jpg" alt="Aérodrome Adumbi"
-            class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" />
-          <div class="absolute inset-0 bg-gradient-to-t from-ink-950 via-ink-950/40 to-transparent"></div>
-          <div class="absolute top-5 left-5">
-            <span
-              class="inline-flex items-center px-3 py-1.5 rounded-full bg-gold-500 text-ink-950 text-[10px] font-bold uppercase tracking-wider">Aviation</span>
+          <!-- Item 3 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <div class="absolute inset-0 bg-white flex flex-col md:flex-row overflow-hidden">
+              <div class="md:w-1/2 h-64 md:h-full overflow-hidden">
+                <img src="/images/hero-construction.jpg" alt="Aérodrome Adumbi" class="w-full h-full object-cover" />
+              </div>
+              <div class="md:w-1/2 p-8 md:p-12 flex flex-col justify-center">
+                <p class="text-xs uppercase tracking-[0.3em] text-blue-600 font-semibold mb-3">Aviation</p>
+                <h3 class="font-display text-2xl md:text-3xl font-bold text-slate-950 leading-tight">Construction de l'aérodrome — Isiro</h3>
+                <p class="mt-6 text-xs uppercase tracking-[0.25em] text-slate-400">Adumbi Mine — Loncor</p>
+              </div>
+            </div>
           </div>
-          <div class="absolute bottom-0 left-0 right-0 p-7 text-white">
-            <p class="text-xs text-gold-300 font-semibold uppercase tracking-wider mb-2">Adumbi Mine — Loncor</p>
-            <h3 class="font-display text-2xl font-bold leading-tight">Construction de l'aérodrome — Isiro</h3>
-          </div>
-        </article>
 
-        <!-- 4 - Supply Chain -->
-        <article
-          class="opacity-0 translate-y-8 group relative aspect-[4/5] rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500">
-          <img src="/images/supply-chain.png" alt="Fourniture Banro"
-            class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" />
-          <div class="absolute inset-0 bg-gradient-to-t from-ink-950 via-ink-950/40 to-transparent"></div>
-          <div class="absolute top-5 left-5">
-            <span
-              class="inline-flex items-center px-3 py-1.5 rounded-full bg-gold-500 text-ink-950 text-[10px] font-bold uppercase tracking-wider">Supply
-              chain</span>
+          <!-- Item 4 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <div class="absolute inset-0 bg-white flex flex-col md:flex-row overflow-hidden">
+              <div class="md:w-1/2 h-64 md:h-full overflow-hidden">
+                <img src="/images/supply-chain.png" alt="Fourniture Banro" class="w-full h-full object-cover" />
+              </div>
+              <div class="md:w-1/2 p-8 md:p-12 flex flex-col justify-center">
+                <p class="text-xs uppercase tracking-[0.3em] text-blue-600 font-semibold mb-3">Supply chain</p>
+                <h3 class="font-display text-2xl md:text-3xl font-bold text-slate-950 leading-tight">Consommables miniers &amp; safety</h3>
+                <p class="mt-6 text-xs uppercase tracking-[0.25em] text-slate-400">Banro Corporation</p>
+              </div>
+            </div>
           </div>
-          <div class="absolute bottom-0 left-0 right-0 p-7 text-white">
-            <p class="text-xs text-gold-300 font-semibold uppercase tracking-wider mb-2">Banro Corporation</p>
-            <h3 class="font-display text-2xl font-bold leading-tight">Consommables miniers &amp; safety</h3>
-          </div>
-        </article>
 
-        <!-- 5 - Hydraulique -->
-        <article
-          class="opacity-0 translate-y-8 group relative aspect-[4/5] rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500">
-          <img src="/images/road-construction.png" alt="Périmètre irrigué Luberizi"
-            class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" />
-          <div class="absolute inset-0 bg-gradient-to-t from-ink-950 via-ink-950/40 to-transparent"></div>
-          <div class="absolute top-5 left-5">
-            <span
-              class="inline-flex items-center px-3 py-1.5 rounded-full bg-gold-500 text-ink-950 text-[10px] font-bold uppercase tracking-wider">Hydraulique</span>
+          <!-- Item 5 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <div class="absolute inset-0 bg-white flex flex-col md:flex-row overflow-hidden">
+              <div class="md:w-1/2 h-64 md:h-full overflow-hidden">
+                <img src="/images/road-construction.png" alt="Périmètre irrigué Luberizi" class="w-full h-full object-cover" />
+              </div>
+              <div class="md:w-1/2 p-8 md:p-12 flex flex-col justify-center">
+                <p class="text-xs uppercase tracking-[0.3em] text-blue-600 font-semibold mb-3">Hydraulique</p>
+                <h3 class="font-display text-2xl md:text-3xl font-bold text-slate-950 leading-tight">Extension du périmètre irrigué de Luberizi</h3>
+                <p class="mt-6 text-xs uppercase tracking-[0.25em] text-slate-400">ZOA Pays-Bas — 2019/2020</p>
+              </div>
+            </div>
           </div>
-          <div class="absolute bottom-0 left-0 right-0 p-7 text-white">
-            <p class="text-xs text-gold-300 font-semibold uppercase tracking-wider mb-2">ZOA Pays-Bas — 2019/2020</p>
-            <h3 class="font-display text-2xl font-bold leading-tight">Extension du périmètre irrigué de Luberizi</h3>
-          </div>
-        </article>
+        </div>
+
+        <!-- Slider indicators -->
+        <div class="absolute z-30 flex -translate-x-1/2 space-x-3 bottom-5 left-1/2">
+          <button type="button" class="w-3 cursor-pointer h-3 rounded-full bg-ink-900" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+          <button type="button" class="w-3 cursor-pointer h-3 rounded-full bg-ink-900 hover:bg-ink-900/70" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+          <button type="button" class="w-3 cursor-pointer h-3 rounded-full bg-ink-900 hover:bg-ink-900/70" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+          <button type="button" class="w-3 cursor-pointer h-3 rounded-full bg-ink-900 hover:bg-ink-900/70" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+          <button type="button" class="w-3 cursor-pointer h-3 rounded-full bg-ink-900 hover:bg-ink-900/70" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+        </div>
+
+        <!-- Slider controls -->
+        <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+          <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 transition-all">
+            <svg class="w-5 h-5 text-white" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="m15 19-7-7 7-7"/></svg>
+            <span class="sr-only">Previous</span>
+          </span>
+        </button>
+        <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+          <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-black/30 group-hover:bg-blue/50 transition-all">
+            <svg class="w-5 h-5 text-white" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="m9 5 7 7-7 7"/></svg>
+            <span class="sr-only">Next</span>
+          </span>
+        </button>
       </div>
-
     </div>
   </div>
 </section>

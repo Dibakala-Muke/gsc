@@ -1,5 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, AfterViewInit, Inject, PLATFORM_ID } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
 import { fadeInUp } from '../../../animations/fade/fade';
+import { initFlowbite } from 'flowbite';
 
 @Component({
   selector: 'app-hero',
@@ -8,7 +10,13 @@ import { fadeInUp } from '../../../animations/fade/fade';
   templateUrl: './hero.html',
   styleUrl: './hero.css',
 })
-export class Hero {
+export class Hero implements AfterViewInit {
+  constructor(@Inject(PLATFORM_ID) private platformId: object) {}
 
+  ngAfterViewInit(): void {
+    if (isPlatformBrowser(this.platformId)) {
+      initFlowbite();
+    }
+  }
 }
 
