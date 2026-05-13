@@ -1,17 +1,21 @@
 <footer class="bg-ink-700 text-white">
+  <div appScroll>
     <div class="max-w-7xl mx-auto px-6 pt-20 pb-10">
       <div class="grid lg:grid-cols-12 gap-12 pb-14 border-b border-white/10">
 
-        <div class="lg:col-span-5">
+        <article class="opacity-0 translate-y-8 lg:col-span-5">
           <a href="#" class="flex items-center gap-3 group">
             <div class="relative">
-              <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-ink-700 to-ink-700 flex items-center justify-center shadow-lg">
+              <div
+                class="w-12 h-12 rounded-xl bg-gradient-to-br from-ink-700 to-ink-700 flex items-center justify-center shadow-lg">
                 <span class="font-display font-bold text-white text-xl leading-none">G</span>
               </div>
             </div>
             <div class="leading-tight">
-              <p class="font-display font-bold text-white text-xl tracking-tight">GSC <span class="text-ink-700">Sarl</span></p>
-              <p class="text-[10px] uppercase tracking-[0.18em] text-ink-100/50 font-semibold">Générale de Service Continental</p>
+              <p class="font-display font-bold text-white text-xl tracking-tight">GSC <span
+                  class="text-ink-700">Sarl</span></p>
+              <p class="text-[10px] uppercase tracking-[0.18em] text-ink-100/50 font-semibold">Générale de Service
+                Continental</p>
             </div>
           </a>
           <p class="mt-5 text-ink-100/60 leading-relaxed max-w-md">
@@ -22,60 +26,83 @@
           <p class="mt-6 text-xs uppercase tracking-[0.3em] text-ink-700 font-bold">
             Intégrité · Excellence · Rapidité
           </p>
-        </div>
+        </article>
 
-        <div class="lg:col-span-2">
+        <article class="opacity-0 translate-y-8 lg:col-span-2">
           <p class="text-white font-bold text-sm mb-5">Navigation</p>
           <ul class="space-y-3 text-sm">
             <li><a [routerLink]="['/home']" fragment="about" routerLinkActive="active"
-            [routerLinkActiveOptions]="{ fragment: 'exact' }"      class="text-white/60 hover:text-ink-700 transition">Accueil</a></li>
+                [routerLinkActiveOptions]="{ fragment: 'exact' }"
+                class="text-white/60 hover:text-ink-700 transition">Accueil</a></li>
             <li><a [routerLink]="['/home']" fragment="about" routerLinkActive="active"
-            [routerLinkActiveOptions]="{ fragment: 'exact' }"      class="text-white/60 hover:text-ink-700 transition">À Propos</a></li>
+                [routerLinkActiveOptions]="{ fragment: 'exact' }" class="text-white/60 hover:text-ink-700 transition">À
+                Propos</a></li>
             <li><a [routerLink]="['/home']" fragment="services" routerLinkActive="active"
-            [routerLinkActiveOptions]="{ fragment: 'exact' }"      class="text-white/60 hover:text-ink-700 transition">Services</a></li>
+                [routerLinkActiveOptions]="{ fragment: 'exact' }"
+                class="text-white/60 hover:text-ink-700 transition">Services</a></li>
             <li><a [routerLink]="['/home']" fragment="realisations" routerLinkActive="active"
-            [routerLinkActiveOptions]="{ fragment: 'exact' }"      class="text-white/60 hover:text-ink-700 transition">Réalisations</a></li>
+                [routerLinkActiveOptions]="{ fragment: 'exact' }"
+                class="text-white/60 hover:text-ink-700 transition">Réalisations</a></li>
             <li><a [routerLink]="['/home']" fragment="vision" routerLinkActive="active"
-            [routerLinkActiveOptions]="{ fragment: 'exact' }"      class="text-white/60 hover:text-ink-700 transition">Vision &amp; Mission</a></li>
+                [routerLinkActiveOptions]="{ fragment: 'exact' }"
+                class="text-white/60 hover:text-ink-700 transition">Vision &amp; Mission</a></li>
           </ul>
-        </div>
+        </article>
 
-        <div class="lg:col-span-2">
+        <article class="opacity-0 translate-y-8 lg:col-span-2">
           <p class="text-white font-bold text-sm mb-5">Services</p>
           <ul class="space-y-3 text-sm">
             <li><a [routerLink]="['/home']" fragment="services" routerLinkActive="active"
-            [routerLinkActiveOptions]="{ fragment: 'exact' }"      class="text-white/60 hover:text-ink-700 transition">Génie civil</a></li>
+                [routerLinkActiveOptions]="{ fragment: 'exact' }"
+                class="text-white/60 hover:text-ink-700 transition">Génie civil</a></li>
             <li><a [routerLink]="['/home']" fragment="services" routerLinkActive="active"
-            [routerLinkActiveOptions]="{ fragment: 'exact' }"      class="text-white/60 hover:text-ink-700 transition">Mine</a></li>
+                [routerLinkActiveOptions]="{ fragment: 'exact' }"
+                class="text-white/60 hover:text-ink-700 transition">Mine</a></li>
             <li><a [routerLink]="['/home']" fragment="services" routerLinkActive="active"
-            [routerLinkActiveOptions]="{ fragment: 'exact' }"      class="text-white/60 hover:text-ink-700 transition">Supply chain</a></li>
+                [routerLinkActiveOptions]="{ fragment: 'exact' }"
+                class="text-white/60 hover:text-ink-700 transition">Supply chain</a></li>
             <li><a [routerLink]="['/home']" fragment="services" routerLinkActive="active"
-            [routerLinkActiveOptions]="{ fragment: 'exact' }"      class="text-white/60 hover:text-ink-700 transition">Transport</a></li>
+                [routerLinkActiveOptions]="{ fragment: 'exact' }"
+                class="text-white/60 hover:text-ink-700 transition">Transport</a></li>
             <li><a href="#services" class="text-white/60 hover:text-ink-700 transition">Protection incendie</a></li>
           </ul>
-        </div>
+        </article>
 
-        <div class="lg:col-span-3">
+        <article class="opacity-0 translate-y-8 lg:col-span-3">
           <p class="text-white font-bold text-sm mb-5">Contact</p>
           <ul class="space-y-3 text-sm text-white/60">
             <li class="flex items-start gap-3">
-              <svg class="w-4 h-4 text-ink-700 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
-              <span>15, Av. Lt Colonel Lukusa<br/>Gombe — Kinshasa, RDC</span>
+              <svg class="w-4 h-4 text-ink-700 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor"
+                viewBox="0 0 24 24" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
+              <span>15, Av. Lt Colonel Lukusa<br />Gombe — Kinshasa, RDC</span>
             </li>
             <li class="flex items-start gap-3">
-              <svg class="w-4 h-4 text-ink-700 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h2.28a2 2 0 011.94 1.515l.7 2.828a2 2 0 01-.45 1.95L8.09 10.91a11 11 0 005 5l1.617-1.38a2 2 0 011.95-.45l2.828.7A2 2 0 0121 16.72V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+              <svg class="w-4 h-4 text-ink-700 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor"
+                viewBox="0 0 24 24" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M3 5a2 2 0 012-2h2.28a2 2 0 011.94 1.515l.7 2.828a2 2 0 01-.45 1.95L8.09 10.91a11 11 0 005 5l1.617-1.38a2 2 0 011.95-.45l2.828.7A2 2 0 0121 16.72V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+              </svg>
               <div>
-                <a href="tel:+243813734177"  class="block hover:text-ink-700 transition">+243 813 734 177</a>
-                <a href="tel:+243998145840"  class="block hover:text-ink-700 transition">+243 998 145 840</a>
-                <a href="tel:+243818946442"  class="block hover:text-ink-700 transition">+243 818 946 442</a>
+                <a href="tel:+243813734177" class="block hover:text-ink-700 transition">+243 813 734 177</a>
+                <a href="tel:+243998145840" class="block hover:text-ink-700 transition">+243 998 145 840</a>
+                <a href="tel:+243818946442" class="block hover:text-ink-700 transition">+243 818 946 442</a>
               </div>
             </li>
             <li class="flex items-start gap-3">
-              <svg class="w-4 h-4 text-ink-700 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
-              <a href="mailto:gservicecontinentaldrc@gmail.com" class="hover:text-ink-700 transition break-all">gservicecontinentaldrc@gmail.com</a>
+              <svg class="w-4 h-4 text-ink-700 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor"
+                viewBox="0 0 24 24" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg>
+              <a href="mailto:gservicecontinentaldrc@gmail.com"
+                class="hover:text-ink-700 transition break-all">gservicecontinentaldrc@gmail.com</a>
             </li>
           </ul>
-        </div>
+        </article>
       </div>
 
       <div class="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-ink-100/40">
@@ -86,4 +113,5 @@
         </p>
       </div>
     </div>
+  </div>
 </footer>
