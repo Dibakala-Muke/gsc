@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 @import "flowbite/src/themes/default";
 @import "tailwindcss";
 
@@ -10,13 +11,13 @@ html {
 
 @theme {
   /* Couleurs Ink */
-  --color-ink-50: #e6f0ff;
-  --color-ink-100: #cce0ff;
-  --color-ink-500: #4d7fd1;
+  --color-ink-50: #ffffff;
+  --color-ink-100: #f8f9fa;
+  --color-ink-500: #0b4aaf;
   --color-ink-700: #0b4aaf;
-  --color-ink-800: #093a8a;
-  --color-ink-900: #072c6b;
-  --color-ink-950: #04184d;
+  --color-ink-800: #0b4aaf;
+  --color-ink-900: #0b4aaf;
+  --color-ink-950: #ffffff;
 
   /* Couleurs Gold */
   --color-gold-50: #f8f9fa;
@@ -24,15 +25,15 @@ html {
   --color-gold-200: #e8eaed;
   --color-gold-300: #dadce0;
   --color-gold-400: #bdc1c6;
-  --color-gold-500: #9aa0a6;
-  --color-gold-600: #868789;
-  --color-gold-700: #6e747a;
-  --color-gold-800: #5f6368;
-  --color-gold-900: #3c4043;
+  --color-gold-500: #0b4aaf;
+  --color-gold-600: #0b4aaf;
+  --color-gold-700: #0b4aaf;
+  --color-gold-800: #0b4aaf;
+  --color-gold-900: #0b4aaf;
 
   /* Fonts */
-  --font-sans: "Plus Jakarta Sans", system-ui, sans-serif;
-  --font-display: "Playfair Display", serif;
+  --font-sans: "Poppins", system-ui, sans-serif;
+  --font-display: "Poppins", serif;
 
   /* Animations (tokens uniquement) */
   --animation-fade-up: fade-up 0.9s ease-out both;

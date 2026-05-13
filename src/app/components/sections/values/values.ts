@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-import { GsapScroll } from '../../../directives/gsap-scroll';
+import { Scroll } from '../../../directives/scroll';
 
 @Component({
   selector: 'app-values',
-  imports: [GsapScroll],
+  imports: [Scroll],
   templateUrl: './values.html',
   styleUrl: './values.css',
 })
