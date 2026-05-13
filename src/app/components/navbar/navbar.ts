@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { RouterLink, RouterLinkActive } from "@angular/router";
+import { Component, inject } from '@angular/core';
+import { RouterLink, RouterLinkActive, Router } from "@angular/router";
 
 @Component({
   selector: 'app-navbar',
@@ -8,5 +8,10 @@ import { RouterLink, RouterLinkActive } from "@angular/router";
   styleUrl: './navbar.css',
 })
 export class Navbar {
+  private router = inject(Router);
 
+  isHomeActive(): boolean {
+    const url = this.router.url;
+    return url === '/' || url === '/home' || url === '/home#hero';
+  }
 }

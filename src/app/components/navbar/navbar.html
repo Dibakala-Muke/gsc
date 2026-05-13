@@ -18,11 +18,13 @@
     <!-- Desktop Nav -->
     <div class="hidden lg:flex items-center gap-6">
       <ul class="flex items-center gap-1">
-        <li><a [routerLink]="['/home']" fragment="hero" routerLinkActive="active"
-            [routerLinkActiveOptions]="{ paths: 'subset', fragment: 'exact' }"
-            class="px-4 py-2 text-sm font-semibold text-black hover:text-ink-700 relative group transition">ACCUEIL
+        <li>
+          <a [routerLink]="['/home']" fragment="hero" [class.active]="isHomeActive()"
+            class="px-4 py-2 text-sm font-semibold text-black hover:text-ink-700 relative group transition">
+            ACCUEIL
             <span
-              class="absolute left-4 right-4 -bottom-0.5 h-0.5 bg-ink-700 scale-x-0 group-hover:scale-x-100 [.active_&]:scale-x-100 origin-left transition-transform"></span></a>
+              class="absolute left-4 right-4 -bottom-0.5 h-0.5 bg-ink-700 scale-x-0 group-hover:scale-x-100 [.active_&]:scale-x-100 origin-left transition-transform"></span>
+          </a>
         </li>
         <li class="group relative">
           <button
@@ -39,7 +41,8 @@
             <a href="#vision"
               class="block px-5 py-3 text-sm text-black hover:bg-ink-50 hover:text-ink-700 transition">Nos objectifs</a>
             <a href="#realisations"
-              class="block px-5 py-3 text-sm text-black hover:bg-ink-50 hover:text-ink-700 transition">Nos réalisations</a>
+              class="block px-5 py-3 text-sm text-black hover:bg-ink-50 hover:text-ink-700 transition">Nos
+              réalisations</a>
             <a href="#gallery"
               class="block px-5 py-3 text-sm text-black hover:bg-ink-50 hover:text-ink-700 transition">Gallery</a>
           </div>
@@ -120,10 +123,12 @@
           class="ml-6 flex items-center justify-between py-3 px-5 rounded-2xl text-ink-900 font-semibold hover:bg-ink-50 hover:text-ink-700 transition-all active:scale-[0.98]">Historique
           <span class="text-ink-700">→</span></a></li>
       <li><a (click)="navToggle.checked = false" href="#objectives"
-          class="ml-6 flex items-center justify-between py-3 px-5 rounded-2xl text-ink-900 font-semibold hover:bg-ink-50 hover:text-ink-700 transition-all active:scale-[0.98]">Nos objectifs
+          class="ml-6 flex items-center justify-between py-3 px-5 rounded-2xl text-ink-900 font-semibold hover:bg-ink-50 hover:text-ink-700 transition-all active:scale-[0.98]">Nos
+          objectifs
           <span class="text-ink-700">→</span></a></li>
       <li><a (click)="navToggle.checked = false" href="#realisations"
-          class="ml-6 flex items-center justify-between py-3 px-5 rounded-2xl text-ink-900 font-semibold hover:bg-ink-50 hover:text-ink-700 transition-all active:scale-[0.98]">Nos réalisations
+          class="ml-6 flex items-center justify-between py-3 px-5 rounded-2xl text-ink-900 font-semibold hover:bg-ink-50 hover:text-ink-700 transition-all active:scale-[0.98]">Nos
+          réalisations
           <span class="text-ink-700">→</span></a></li>
       <li><a (click)="navToggle.checked = false" href="#gallery"
           class="ml-6 flex items-center justify-between py-3 px-5 rounded-2xl text-ink-900 font-semibold hover:bg-ink-50 hover:text-ink-700 transition-all active:scale-[0.98]">Gallery
