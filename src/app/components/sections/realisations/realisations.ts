@@ -1,11 +1,11 @@
 import { Component, AfterViewInit, Inject, PLATFORM_ID } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
-import { Scroll } from '../../../directives/scroll';
 import { initFlowbite } from 'flowbite';
+import { GsapSlideDirective } from "../../../directives/gsap-slide-directive";
 
 @Component({
   selector: 'app-realisations',
-  imports: [Scroll],
+  imports: [GsapSlideDirective],
   templateUrl: './realisations.html',
   styleUrl: './realisations.css',
 })

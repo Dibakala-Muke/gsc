@@ -10,15 +10,15 @@ export class GsapScroll {
     afterNextRender(() => {
       const element = this.el.nativeElement;
 
-      gsap.set(element, { opacity: 0, y: 40 });
+      gsap.set(element, { opacity: 0, y: 50 });
 
       const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
           if (entry.isIntersecting) {
-            gsap.to(element, { opacity: 1, y: 0, duration: 1, ease: 'power3.out' });
+            gsap.to(element, { opacity: 1, y: 0, duration: 3, ease: 'power6.out' });
           }
         });
-      }, { threshold: 0.2 });
+      }, { threshold: 0.5 });
 
       observer.observe(element);
     });

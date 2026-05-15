@@ -1,0 +1,11 @@
+.kpi-card {
+  backdrop-filter: blur(18px);
+}
+
+.kpi-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(180deg, rgba(243, 225, 176, 0.12), transparent 65%);
+}
