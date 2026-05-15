@@ -1,0 +1,23 @@
+.after-navbar-banner {
+  min-height: 28rem;
+}
+
+.after-navbar-banner::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at top left, rgba(255, 255, 255, 0.08), transparent 35%);
+  pointer-events: none;
+}
+
+.after-navbar-bg {
+  min-height: 100%;
+  opacity: 0.95;
+  transform: scale(1.02);
+}
+
+@media (min-width: 1024px) {
+  .after-navbar-banner {
+    min-height: 32rem;
+  }
+}

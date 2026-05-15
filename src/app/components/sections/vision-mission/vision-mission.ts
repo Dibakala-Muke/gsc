@@ -5,7 +5,7 @@ import { GsapScroll } from '../../../directives/gsap-scroll';
   selector: 'app-vision-mission',
   imports: [GsapScroll],
   templateUrl: './vision-mission.html',
-  styleUrl: './vision-mission.css',
+  styleUrls: ['./vision-mission.css'],
 })
 export class VisionMission {
 

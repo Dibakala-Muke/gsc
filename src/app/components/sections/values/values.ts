@@ -5,7 +5,7 @@ import { GsapSlideDirective } from "../../../directives/gsap-slide-directive";
   selector: 'app-values',
   imports: [GsapSlideDirective],
   templateUrl: './values.html',
-  styleUrl: './values.css',
+  styleUrls: ['./values.css'],
 })
 export class Values {
 

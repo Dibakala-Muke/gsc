@@ -6,7 +6,7 @@ import { Scroll } from "../../directives/scroll";
   selector: 'app-footer',
   imports: [RouterLink, RouterLinkActive, Scroll],
   templateUrl: './footer.html',
-  styleUrl: './footer.css',
+  styleUrls: ['./footer.css'],
 })
 export class Footer {
 

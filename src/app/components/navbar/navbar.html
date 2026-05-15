@@ -4,7 +4,7 @@
 
   <nav class="max-w-7xl mx-auto px-6 h-30 flex items-center justify-between">
     <!-- Logo -->
-    <a [routerLink]="['/home']" fragment="hero" class="flex items-center gap-4 group">
+    <a [routerLink]="['/home']" class="flex items-center gap-4 group">
       <!-- Conteneur du Logo Image -->
       <div class="relative">
         <div
@@ -19,7 +19,7 @@
     <div class="hidden lg:flex items-center gap-6">
       <ul class="flex items-center gap-1">
         <li>
-          <a [routerLink]="['/home']" fragment="hero" [class.active]="isHomeActive()"
+          <a [routerLink]="['/home']" [class.active]="isHomeActive()"
             class="px-4 py-2 text-sm font-semibold text-black hover:text-ink-700 relative group transition">
             ACCUEIL
             <span
@@ -29,31 +29,36 @@
         <li class="group relative">
           <button
             class="flex items-center gap-2 px-4 py-2 text-sm font-semibold text-black hover:text-ink-700 transition">
-            À PROPOS
+            GSC
             <svg class="w-3.5 h-3.5 text-black" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <path stroke-linecap="round" stroke-linejoin="round" d="M6 9l6 6 6-6" />
             </svg>
           </button>
           <div
             class="absolute left-0 top-full mt-3 min-w-[13rem] rounded-3xl bg-white border border-ink-100 shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-            <a href="#history"
-              class="block px-5 py-3 text-sm text-black hover:bg-ink-50 hover:text-ink-700 transition">Historique</a>
-            <a href="#vision"
-              class="block px-5 py-3 text-sm text-black hover:bg-ink-50 hover:text-ink-700 transition">Nos objectifs</a>
-            <a href="#realisations"
-              class="block px-5 py-3 text-sm text-black hover:bg-ink-50 hover:text-ink-700 transition">Nos
-              réalisations</a>
-            <a href="#gallery"
+            <a [routerLink]="['/gsc-about']" routerLinkActive="active"
+              class="block px-5 py-3 text-sm text-black hover:bg-ink-50 hover:text-ink-700 transition">À propos</a>
+            <a [routerLink]="['/gsc-equipe']" routerLinkActive="active"
+              class="block px-5 py-3 text-sm text-black hover:bg-ink-50 hover:text-ink-700 transition">Notre Équipe</a>
+            <a [routerLink]="['/gsc-rendezvous']" routerLinkActive="active"
+              class="block px-5 py-3 text-sm text-black hover:bg-ink-50 hover:text-ink-700 transition">Rendez-vous</a>
+            <a [routerLink]="['/gsc-gallery']" routerLinkActive="active"
               class="block px-5 py-3 text-sm text-black hover:bg-ink-50 hover:text-ink-700 transition">Gallery</a>
           </div>
         </li>
-        <li><a [routerLink]="['/home']" fragment="services" routerLinkActive="active"
+        <li><a [routerLink]="['/services']" routerLinkActive="active"
             [routerLinkActiveOptions]="{ fragment: 'exact' }"
             class="px-4 py-2 text-sm font-semibold text-black hover:text-ink-700 relative group transition">SERVICES
             <span
               class="absolute left-4 right-4 -bottom-0.5 h-0.5 bg-ink-700 scale-x-0 group-hover:scale-x-100 [.active_&]:scale-x-100 origin-left transition-transform"></span></a>
         </li>
-        <li><a [routerLink]="['/home']" fragment="contact" routerLinkActive="active"
+        <li><a [routerLink]="['/realisations']" routerLinkActive="active"
+            [routerLinkActiveOptions]="{ fragment: 'exact' }"
+            class="px-4 py-2 text-sm font-semibold text-black hover:text-ink-700 relative group transition">REALISATIONS
+            <span
+              class="absolute left-4 right-4 -bottom-0.5 h-0.5 bg-ink-700 scale-x-0 group-hover:scale-x-100 [.active_&]:scale-x-100 origin-left transition-transform"></span></a>
+        </li>
+        <li><a [routerLink]="['/contact']" routerLinkActive="active"
             [routerLinkActiveOptions]="{ fragment: 'exact' }"
             class="px-4 py-2 text-sm font-semibold text-black hover:text-ink-700 relative group transition">CONTACT
             <span
@@ -113,33 +118,32 @@
     class="lg:hidden absolute top-20 left-0 w-full overflow-hidden max-h-0 peer-checked:max-h-[100vh] peer-checked:opacity-100 opacity-0 transition-all duration-500 ease-in-out bg-white/98 backdrop-blur-xl border-b border-ink-100 shadow-2xl">
     <ul class="px-6 py-8 flex flex-col gap-2">
       <!-- On ajoute (click)="navToggle.checked = false" sur chaque lien pour fermer le menu -->
-      <li><a (click)="navToggle.checked = false" [routerLink]="['/home']" fragment="hero"
+      <li><a (click)="navToggle.checked = false" [routerLink]="['/home']"
           class="flex items-center justify-between py-4 px-5 rounded-2xl text-ink-900 font-bold hover:bg-ink-100 hover:text-ink-700 transition-all active:scale-[0.98]">ACCUEIL
           <span class="text-ink-700">→</span></a></li>
-      <li><a (click)="navToggle.checked = false" [routerLink]="['/home']" fragment="about"
-          class="flex items-center justify-between py-4 px-5 rounded-2xl text-ink-900 font-bold hover:bg-ink-100 hover:text-ink-700 transition-all active:scale-[0.98]">À
-          PROPOS <span class="text-ink-700">→</span></a></li>
-      <li><a (click)="navToggle.checked = false" href="#history"
-          class="ml-6 flex items-center justify-between py-3 px-5 rounded-2xl text-ink-900 font-semibold hover:bg-ink-50 hover:text-ink-700 transition-all active:scale-[0.98]">Historique
+      <li><a (click)="navToggle.checked = false" [routerLink]="['/home']"
+          class="flex items-center justify-between py-4 px-5 rounded-2xl text-ink-900 font-bold hover:bg-ink-100 hover:text-ink-700 transition-all active:scale-[0.98]">GSC
           <span class="text-ink-700">→</span></a></li>
-      <li><a (click)="navToggle.checked = false" href="#objectives"
-          class="ml-6 flex items-center justify-between py-3 px-5 rounded-2xl text-ink-900 font-semibold hover:bg-ink-50 hover:text-ink-700 transition-all active:scale-[0.98]">Nos
-          objectifs
+      <li><a (click)="navToggle.checked = false" [routerLink]="['/gsc-about']"
+          class="ml-6 flex items-center justify-between py-3 px-5 rounded-2xl text-ink-900 font-semibold hover:bg-ink-50 hover:text-ink-700 transition-all active:scale-[0.98]">A propos
           <span class="text-ink-700">→</span></a></li>
-      <li><a (click)="navToggle.checked = false" href="#realisations"
+      <li><a (click)="navToggle.checked = false" [routerLink]="['/gsc-rendezvous']"
+          class="ml-6 flex items-center justify-between py-3 px-5 rounded-2xl text-ink-900 font-semibold hover:bg-ink-50 hover:text-ink-700 transition-all active:scale-[0.98]">Rendez-vous
+          <span class="text-ink-700">→</span></a></li>
+      <li><a (click)="navToggle.checked = false" [routerLink]="['/gsc-realisations']"
           class="ml-6 flex items-center justify-between py-3 px-5 rounded-2xl text-ink-900 font-semibold hover:bg-ink-50 hover:text-ink-700 transition-all active:scale-[0.98]">Nos
           réalisations
           <span class="text-ink-700">→</span></a></li>
-      <li><a (click)="navToggle.checked = false" href="#gallery"
+      <li><a (click)="navToggle.checked = false" [routerLink]="['/gsc-gallery']"
           class="ml-6 flex items-center justify-between py-3 px-5 rounded-2xl text-ink-900 font-semibold hover:bg-ink-50 hover:text-ink-700 transition-all active:scale-[0.98]">Gallery
           <span class="text-ink-700">→</span></a></li>
-      <li><a (click)="navToggle.checked = false" [routerLink]="['/home']" fragment="services"
+      <li><a (click)="navToggle.checked = false" [routerLink]="['services']"
           class="flex items-center justify-between py-4 px-5 rounded-2xl text-ink-900 font-bold hover:bg-ink-100 hover:text-ink-700 transition-all active:scale-[0.98]">Services
           <span class="text-ink-700">→</span></a></li>
-      <li><a (click)="navToggle.checked = false" [routerLink]="['/home']" fragment="realisations"
+      <li><a (click)="navToggle.checked = false" [routerLink]="['realisations']"
           class="flex items-center justify-between py-4 px-5 rounded-2xl text-ink-900 font-bold hover:bg-ink-100 hover:text-ink-700 transition-all active:scale-[0.98]">REALISATIONS
           <span class="text-ink-700">→</span></a></li>
-      <li><a (click)="navToggle.checked = false" [routerLink]="['/home']" fragment="contact"
+      <li><a (click)="navToggle.checked = false" [routerLink]="['contact']"
           class="mt-4 block text-center bg-ink-700 text-white font-bold py-5 px-6 rounded-2xl shadow-xl shadow-ink-700/20 active:scale-95 transition-transform">Demander
           un devis</a></li>
     </ul>

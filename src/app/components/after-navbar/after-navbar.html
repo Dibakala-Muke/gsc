@@ -1,0 +1,27 @@
+<section
+  class="relative bg-cover bg-center bg-no-repeat py-24 md:py-32 lg:py-40 mt-10 md:mt-2 flex items-center justify-center text-center overflow-hidden"
+  [style.backgroundImage]="'url(' + backgroundImage() + ')'">
+  
+  <div class="absolute inset-0 bg-black/50 z-0"></div>
+
+  <div class="absolute inset-0 flex items-center justify-center select-none pointer-events-none z-10 opacity-10 hidden md:flex">
+    <span appGsapSlide="top" class="text-white text-[8vw] font-bold tracking-wider uppercase whitespace-nowrap">
+      {{ title() }}
+    </span>
+  </div>
+
+  <!-- Contenu Principal -->
+  <div class="relative z-20 px-4 max-w-7xl mx-auto flex flex-col items-center gap-3">
+    <!-- Titre de la page -->
+    <h1 appGsapSlide="left" class="text-white text-3xl md:text-5xl lg:text-6xl font-bold tracking-wide">
+      {{ title() }}
+    </h1>
+    
+    <!-- Fil d'Ariane / Breadcrumb -->
+    <nav appGsapSlide="right" class="flex items-center gap-2 text-xs md:text-sm font-medium tracking-widest uppercase">
+      <span class="text-gray-300">La générale de Service Continantal</span>
+      <span class="text-gray-400">/</span>
+      <span class="text-white font-semibold">{{ title() }}</span>
+    </nav>
+  </div>
+</section>

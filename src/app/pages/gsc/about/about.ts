@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
-import { GsapScroll } from '../../../directives/gsap-scroll';
+import { AfterNavbar } from "../../../components/after-navbar/after-navbar";
 
 @Component({
   selector: 'app-about',
-  imports: [GsapScroll],
+  imports: [AfterNavbar],
   templateUrl: './about.html',
-  styleUrls: ['./about.css'],
+  styleUrl: './about.css',
 })
 export class About {
 

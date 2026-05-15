@@ -6,7 +6,7 @@ import { GsapSlideDirective } from "../../../directives/gsap-slide-directive";
   selector: 'app-cta',
   imports: [Scroll, GsapSlideDirective],
   templateUrl: './cta.html',
-  styleUrl: './cta.css',
+  styleUrls: ['./cta.css'],
 })
 export class Cta {
 

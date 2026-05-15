@@ -31,21 +31,11 @@
         <article class="opacity-0 translate-y-8 lg:col-span-2">
           <p class="text-white font-bold text-sm mb-5">Navigation</p>
           <ul class="space-y-3 text-sm">
-            <li><a [routerLink]="['/home']" fragment="about" routerLinkActive="active"
-                [routerLinkActiveOptions]="{ fragment: 'exact' }"
-                class="text-white/60 hover:text-ink-700 transition">Accueil</a></li>
-            <li><a [routerLink]="['/home']" fragment="about" routerLinkActive="active"
-                [routerLinkActiveOptions]="{ fragment: 'exact' }" class="text-white/60 hover:text-ink-700 transition">À
-                Propos</a></li>
-            <li><a [routerLink]="['/home']" fragment="services" routerLinkActive="active"
-                [routerLinkActiveOptions]="{ fragment: 'exact' }"
-                class="text-white/60 hover:text-ink-700 transition">Services</a></li>
-            <li><a [routerLink]="['/home']" fragment="realisations" routerLinkActive="active"
-                [routerLinkActiveOptions]="{ fragment: 'exact' }"
-                class="text-white/60 hover:text-ink-700 transition">Réalisations</a></li>
-            <li><a [routerLink]="['/home']" fragment="vision" routerLinkActive="active"
-                [routerLinkActiveOptions]="{ fragment: 'exact' }"
-                class="text-white/60 hover:text-ink-700 transition">Vision &amp; Mission</a></li>
+            <li><a [routerLink]="['/home']" class="text-white/60 hover:text-ink-700 transition">Accueil</a></li>
+            <li><a [routerLink]="['/about']" class="text-white/60 hover:text-ink-700 transition">À Propos</a></li>
+            <li><a [routerLink]="['/services']" class="text-white/60 hover:text-ink-700 transition">Services</a></li>
+            <li><a [routerLink]="['/realisations']" class="text-white/60 hover:text-ink-700 transition">Réalisations</a></li>
+            <li><a [routerLink]="['/about']" class="text-white/60 hover:text-ink-700 transition">Vision &amp; Mission</a></li>
           </ul>
         </article>
 

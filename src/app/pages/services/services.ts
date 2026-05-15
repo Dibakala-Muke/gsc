@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-import { Scroll } from '../../../directives/scroll';
+import { AfterNavbar } from "../../components/after-navbar/after-navbar";
 
 @Component({
   selector: 'app-services',
-  imports: [Scroll],
+  imports: [AfterNavbar],
   templateUrl: './services.html',
   styleUrls: ['./services.css'],
 })

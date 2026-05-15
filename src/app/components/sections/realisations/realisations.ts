@@ -7,7 +7,7 @@ import { GsapSlideDirective } from "../../../directives/gsap-slide-directive";
   selector: 'app-realisations',
   imports: [GsapSlideDirective],
   templateUrl: './realisations.html',
-  styleUrl: './realisations.css',
+  styleUrls: ['./realisations.css'],
 })
 export class Realisations implements AfterViewInit {
   constructor(@Inject(PLATFORM_ID) private platformId: object) {}

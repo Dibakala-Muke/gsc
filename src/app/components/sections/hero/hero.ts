@@ -10,7 +10,7 @@ import { GsapSlideDirective } from "../../../directives/gsap-slide-directive";
   imports: [Kpi, GsapSlideDirective],
   animations: [fadeInUp],
   templateUrl: './hero.html',
-  styleUrl: './hero.css',
+  styleUrls: ['./hero.css'],
 })
 export class Hero implements AfterViewInit {
   constructor(@Inject(PLATFORM_ID) private platformId: object) {}
