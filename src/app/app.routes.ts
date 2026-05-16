@@ -4,11 +4,13 @@ import { Home } from './components/home/home';
 export const routes: Routes = [
   {
     path: '',
+    title: 'Accueil - GSC',
     redirectTo: '/home',
     pathMatch: 'full',
   },
   {
     path: 'home',
+    title: 'Accueil - GSC',
     component: Home,
   },
   {

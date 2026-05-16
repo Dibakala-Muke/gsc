@@ -1,1 +1,64 @@
 <app-after-navbar title="Nous Contacter" backgroundImage="images/contact-page.jpg"></app-after-navbar>
+<div class="grid gap-6 md:grid-cols-3 max-w-7xl mx-auto mt-12 mb-0 px-4 py-8">
+  <!-- Carte E-mail -->
+  <div appGsapSlide="left" class="flex flex-col bg-[#F8F9FA] rounded-sm overflow-hidden shadow-sm">
+    <div class="relative h-40 bg-cover bg-center flex items-center justify-center"
+      style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/images/fond3.jpg');">
+      <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-md">
+        <svg xmlns="http://w3.org" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#3498db" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+        </svg>
+      </div>
+    </div>
+    <div class="p-6 text-center flex flex-col items-center justify-center min-h-[100px]">
+      <span class="text-sm font-bold uppercase tracking-widest text-[#3498db] mb-2">Envoyer un e-mail</span>
+      <a href="mailto:contact@geomapcongo.com"
+        class="text-1xl font-black text-slate-900 hover:text-[#3498db] transition-colors">
+        gservicecontinentaldrc@gmail.com
+      </a>
+    </div>
+  </div>
+
+  <!-- Carte Téléphone -->
+  <div appGsapSlide="bottom" class="flex flex-col bg-[#F8F9FA] rounded-sm overflow-hidden shadow-sm">
+    <div class="relative h-40 bg-cover bg-center flex items-center justify-center"
+      style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/images/fond3.jpg');">
+      <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-md">
+        <svg xmlns="http://w3.org" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#3498db" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M14.25 9.75v-4.5m0 4.5h4.5m-4.5 0l6-6m-3 18c-4.97 0-9-4.03-9-9s4.03-9 9-9a8.96 8.96 0 0 1 4.39 1.13l1.42-1.42A10.96 10.96 0 0 0 14.25 1c-6.075 0-11 4.925-11 11s4.925 11 11 11a10.96 10.96 0 0 0 8.71-4.29l-1.42-1.42A8.96 8.96 0 0 1 14.25 21z" />
+        </svg>
+      </div>
+    </div>
+    <div class="p-6 text-center flex flex-col items-center justify-center min-h-[100px]">
+      <span class="text-sm font-bold uppercase tracking-widest text-[#3498db] mb-2">Passer un appel</span>
+      <a href="tel:+243814187700" class="text-1xl font-black text-slate-900 hover:text-[#3498db] transition-colors">
+        +243 813 734 177
+      </a>
+      <a href="tel:+243998145840" class="text-1xl font-black text-slate-900 hover:text-[#3498db] transition-colors">
+        +243 998 145 840
+      </a>
+    </div>
+  </div>
+
+  <!-- Carte Adresse -->
+  <div appGsapSlide="left" class="flex flex-col bg-[#F8F9FA] rounded-sm overflow-hidden shadow-sm">
+    <div class="relative h-40 bg-cover bg-center flex items-center justify-center"
+      style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/images/fond3.jpg');">
+      <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-md">
+        <svg xmlns="http://w3.org" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#3498db" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M9 6.75V15m6-6v8.25m.503-3.446 3.187-2.124a.75.75 0 0 1 1.06 1.06l-3.446 3.187a.75.75 0 0 1-1.06-1.06l.76-.76V9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0z" />
+        </svg>
+      </div>
+    </div>
+    <div class="p-6 text-center flex flex-col items-center justify-center min-h-[100px]">
+      <span class="text-sm font-bold uppercase tracking-widest text-[#3498db] mb-2">Adresse du bureau</span>
+      <p class="text-1xl font-black text-slate-900 leading-snug">
+        15, avenue Lt Colonel Lukusa,<br>C/Gombe
+      </p>
+    </div>
+  </div>
+</div>
+<app-cta></app-cta>
