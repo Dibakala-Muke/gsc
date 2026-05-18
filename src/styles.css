@@ -121,6 +121,7 @@ html {
   }
 
   body {
+    @apply text-lg leading-relaxed;
     background-color: var(--color-ink-50);
     color: var(--color-ink-900);
     -webkit-font-smoothing: antialiased;
