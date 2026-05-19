@@ -1,11 +1,11 @@
 <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-ink-100 shadow-sm">
   <input type="checkbox" id="nav-toggle" #navToggle class="hidden peer" />
 
-  <nav class="max-w-7xl mx-auto px-6 h-30 flex items-center justify-between">
-    <a [routerLink]="['/home']" class="flex items-center gap-4 group">
+  <nav class="max-w-7xl mx-auto px-4 h-24 flex items-center justify-between">
+    <a [routerLink]="['/home']" class="flex items-center gap-4 group min-w-0">
       <div class="relative">
         <div
-          class="w-29 h-29 sm:w-20 sm:h-20 rounded-full bg-white flex items-center justify-center shadow-md border border-ink-50 group-hover:shadow-xl group-hover:scale-105 transition-all duration-300 overflow-hidden">
+          class="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-white flex items-center justify-center shadow-md border border-ink-50 group-hover:shadow-xl group-hover:scale-105 transition-all duration-300 overflow-hidden">
           <img src="/logo.png" alt="GSC Sarl Logo" class="w-full h-full object-contain p-1" />
         </div>
       </div>
@@ -88,24 +88,6 @@
         <span
           class="block w-6 h-0.5 bg-ink-900 rounded-full transition-all duration-300 origin-left peer-checked:group-[]:-rotate-45 peer-checked:group-[]:translate-x-[4px] peer-checked:group-[]:translate-y-[1px]"></span>
       </div>
-
-      <!-- CSS Inline pour l'animation du burger (car Tailwind peer ne gère pas les enfants complexes facilement) -->
-      <style>
-        #nav-toggle:checked~nav label .relative span:nth-child(1) {
-          transform: rotate(45deg) translate(4px, -1px);
-          width: 28px;
-        }
-
-        #nav-toggle:checked~nav label .relative span:nth-child(2) {
-          opacity: 0;
-          transform: translateX(-10px);
-        }
-
-        #nav-toggle:checked~nav label .relative span:nth-child(3) {
-          transform: rotate(-45deg) translate(4px, 1px);
-          width: 28px;
-        }
-      </style>
     </label>
   </nav>
 
