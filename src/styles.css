@@ -6,6 +6,15 @@
 html {
   scroll-behavior: smooth;
 }
+body {
+  overflow-x: hidden;
+}
+main {
+  padding-top: 5rem;
+}
+section {
+  scroll-margin-top: 5rem;
+}
 @plugin "flowbite/plugin";
 @source "../node_modules/flowbite";
 

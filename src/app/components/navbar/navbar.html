@@ -111,7 +111,7 @@
 
   <!-- Mobile Menu -->
   <div
-    class="lg:hidden absolute top-20 left-0 w-full overflow-hidden max-h-0 peer-checked:max-h-[100vh] peer-checked:opacity-100 opacity-0 transition-all duration-500 ease-in-out bg-white/98 backdrop-blur-xl border-b border-ink-100 shadow-2xl">
+    class="lg:hidden absolute top-full left-0 right-0 w-full overflow-hidden overflow-y-auto max-h-0 peer-checked:max-h-[calc(100vh-7.5rem)] peer-checked:opacity-100 opacity-0 transition-all duration-500 ease-in-out bg-white/98 backdrop-blur-xl border-b border-ink-100 shadow-2xl">
     <ul class="px-6 py-8 flex flex-col gap-2">
       <!-- On ajoute (click)="navToggle.checked = false" sur chaque lien pour fermer le menu -->
       <li><a (click)="navToggle.checked = false" [routerLink]="['/home']"
