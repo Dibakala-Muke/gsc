@@ -1,14 +1,14 @@
 import { Component, AfterViewInit, Inject, PLATFORM_ID } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
-import { fadeInUp } from '../../../animations/fade/fade';
 import { initFlowbite } from 'flowbite';
 import { Kpi } from "../../kpi/kpi";
 import { GsapSlideDirective } from "../../../directives/gsap-slide-directive";
+import { RouterLink } from "@angular/router";
 
 @Component({
   selector: 'app-hero',
-  imports: [Kpi, GsapSlideDirective],
-  animations: [fadeInUp],
+  imports: [Kpi, GsapSlideDirective, RouterLink],
+  animations: [],
   templateUrl: './hero.html',
   styleUrls: ['./hero.css'],
 })

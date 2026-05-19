@@ -1,5 +1,6 @@
 import { Component, signal, OnInit, ElementRef, viewChild, afterNextRender } from '@angular/core';
 import { GsapSlideDirective } from "../../directives/gsap-slide-directive";
+import { RouterLink } from "@angular/router";
 
 interface KpiItem {
   target: number;
@@ -10,7 +11,7 @@ interface KpiItem {
 
 @Component({
   selector: 'app-kpi',
-  imports: [GsapSlideDirective],
+  imports: [GsapSlideDirective, RouterLink],
   templateUrl: './kpi.html',
   styleUrls: ['./kpi.css'],
 })
